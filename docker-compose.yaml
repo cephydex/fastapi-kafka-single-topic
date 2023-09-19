@@ -17,7 +17,7 @@ services:
     container_name: kaf-client
     restart: "unless-stopped"
     ports:
-      - "8073:8000"
+      - "8071:8000"
     volumes:
       - "./consumer1:/consapp"
 
@@ -28,7 +28,7 @@ services:
     container_name: kaf-client2
     restart: "unless-stopped"
     ports:
-      - "8071:8000"
+      - "8072:8000"
     volumes:
       - "./consumer2:/app"
 
@@ -39,7 +39,7 @@ services:
     container_name: kaf-client3
     restart: "unless-stopped"
     ports:
-      - "8072:8000"
+      - "8073:8000"
     volumes:
       - "./consumer3:/app"
 
