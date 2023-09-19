@@ -1,0 +1,42 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+#fastapi = {extras = ["all"], version = "*"}
+minio = "*"
+sqlalchemy = "*"
+python-graphql-client = "*"
+requests = "*"
+python-multipart = "*"
+#pydantic = "*"
+pydantic = {extras = ["all"], version = "1.10.9"}
+typing-extensions = "*"
+datetimerange = "*"
+jinja2 = "*"
+pyjwt = {extras = ["crypto"], version = "*"}
+pyfcm = "*"
+boto3 = "*"
+aiokafka = "*"
+nest-asyncio = "*"
+python-dotenv = "*"
+slowapi = "*"
+uvicorn = "*"
+pycountry = "*"
+bcrypt = "*"
+httpx = {extras = ["http2"], version = "*"}
+#httpx = "*"
+pika = "*"
+#aio-pika = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
+#python_full_version = "3.11.1"
+
+[scripts]
+dev-server = "uvicorn server.app:app --host 0.0.0.0 --port $PORT --reload"
+server = "uvicorn server.app:app --host 0.0.0.0 --port $PORT"

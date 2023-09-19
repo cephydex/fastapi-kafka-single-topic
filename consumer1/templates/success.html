@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Response{% endblock %}
+
+{% block html_head %}
+  <style type="text/css">
+    .important {
+      color: #336699;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="alert alert-{{request.rtype}}">
+                    <p>{{request.message}}</p>
+                </div>
+                <div>
+                    <a href="/front/sendsms" class="btn btn-outline-primary">Okay</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+{% endblock %}

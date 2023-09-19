@@ -1,0 +1,12 @@
+fastapi[all]
+pydantic-settings
+uvicorn==0.22.0
+httpx[http2]
+requests
+jinja2
+python-multipart
+python-dotenv
+pika
+aiokafka
+confluent-kafka
+parse
