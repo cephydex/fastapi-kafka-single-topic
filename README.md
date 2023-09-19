@@ -1,7 +1,7 @@
-# FastAPI with GraphQL example app
+# FastAPI with Kafka (Single producer with multiple consumers) example app
 
-# Based on code from:
-Check out [this repo](https://github.com/cephydex/fastapi-kafka-single-topic)
+# Check out code:
+[Repository](https://github.com/cephydex/fastapi-kafka-single-topic)
 
 # How to use this repository
 
@@ -20,7 +20,6 @@ docker-compose up -d
 ```
 
 Navigate to: 
-[http://localhost:5002/graphql](http://localhost:5002/graphql).
 
 [kafka UI](http://localhost:8070).<br/>
 [Producer service](http://localhost:8074/docs).<br/>
